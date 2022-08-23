@@ -1,0 +1,105 @@
+.main .main1 .tx h1,.main .main2 .tx h1{
+        color: bisque;
+}
+.main{
+        margin: 50px;
+}
+.main .main1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+      margin: 20px;
+}
+.main .main2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 20px;
+}
+.main img{
+      width: 500px;
+      height: 200px;
+}
+.main .main1 .im,.main .main2 .im{
+      text-align: center;
+}
+.main .main1 .tx{
+      display:flex;
+        flex-direction: column;
+      align-items: center;
+}
+.main .main2 .tx{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+} 
+@media only screen and (max-width:700px){
+        .main{
+                margin:5px;
+        }
+        .main .main1{
+                display: flex;
+                flex-direction: column-reverse;
+        }
+        .main .main2{
+               display: flex;
+               flex-direction: column;
+               
+        }
+        .main .main1 div,.main .main2 div{
+                margin: 15px;
+        }
+        .main .main1 .tx h1,.main .main2 .tx h1{
+                font-size:25px;
+        }
+        .main .tx p{
+                font-size: 26px;
+        }
+        .main img{
+                width:90%;
+                height:90%;
+        }
+}
+@media only screen and (max-width:379px){
+        .main .main1 div,.main .main2 div{
+                margin: 2px;
+        }
+}
+
+@media only screen and (min-width:380px) and (max-width:500px){
+        .main img{
+                width:330px;
+        }
+        .main .main1 div,.main .main2 div{
+                margin:5px;
+        }
+}
+@media only screen and (min-width:380px) and (max-width:500px){
+        .main img{
+                width:350px;
+        }
+}
+@media only screen and (min-width:701px) {
+        .main{
+                margin: 10px;
+        }
+        .main .main1{
+                grid-template-columns:1fr 1fr;
+        } 
+        .main .main2{
+                grid-template-columns:1fr 1fr;
+        }
+        .main .main1 .im img,.main .main2 .im img{
+                width: 80%;
+                height:250px;
+        }
+        .main .tx p{
+                font-size:20px;
+        }
+        .main .tx{
+                justify-content: center;
+        }
+}
+@media only screen and (min-width:950px){
+        .main .tx p{
+                font-size: 26px;
+        }
+}

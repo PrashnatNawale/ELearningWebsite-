@@ -1,0 +1,154 @@
+main .head h1{
+    text-align: center;
+    color: rgb(243, 68, 68);
+}
+main .member {
+    display:flex;
+}
+main .member2 form{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width:410px){
+    main .head h1{
+        font-size:20px;
+        grid-template-columns: 1fr 1fr;
+        margin:10px;
+    }
+    main .member {
+        display:block;
+    }
+    main .member .member1 img{
+        width: 100%;
+        height: 80%;
+    }
+    main .member .member2 form{
+        grid-template-columns: 1fr;
+        margin: 0px;
+        grid-column-gap:10px;
+        grid-row-gap:10px;
+        margin-left: 30px;
+    }
+    main .member .member2 form label{
+        margin: 5px;
+        font-size:15px;
+    }
+    main .member .member2 form input,main .member2 form select {
+        width: 75%;
+        font-size: 10px;
+    }
+    #i7,#i8{
+        display: block;
+        width:60px;
+        margin-left:30%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:411px) and (max-width:719px){
+main .head h1{
+    font-size:20px;
+    grid-template-columns: 1fr 1fr;
+    margin:10px;
+}
+main .member {
+    display: block;
+}
+main .member .member1 img{
+    width:100%;
+    height: 80%;
+}
+main .member .member2 form{
+    grid-template-columns: 1fr 2fr;
+    margin: 0px;
+    margin-left:20px;
+    grid-row-gap:10px;
+}
+main .member .member2 form label{
+    margin: 5px;
+    font-size:15px;
+}
+main .member .member2 form input,main .member2 form select {
+    width:80%;
+    font-size: 10px;
+}
+#i7,#i8{
+    width:60px;
+    margin-left: 40%;
+}
+}
+@media only screen and (min-width:720px) and (max-width:1299px) {
+    main .head h1{
+        font-size: 20px;
+        grid-template-columns: 1fr 1fr;
+        margin:10px;
+    }
+    main .member{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    main .member .member1 img{
+        width:100%;
+        height: 100%;
+    }
+    main .member2 form{
+        grid-template-columns: 1fr 3fr;
+    }
+    main .member2 form{
+        grid-column-gap:5px;
+        grid-row-gap:5px;
+        margin-top:10px;
+        margin-bottom:20px ;
+        margin-left:10px;
+    }
+    main .member2 form label{
+        font-size: 20px;
+    }
+    main .member2 form input,main .member2 form select{
+        width:90%;
+        height:80%;
+        font-size:12px;
+        margin-left:3%;
+    }
+    #i7,#i8{
+        width: 50%;
+        text-align: center;
+        margin-left: 100px;
+    }   
+}
+@media only screen and (min-width:1220px) and (max-width:1299px){
+    main .member .member2 form{
+        grid-row-gap: 20px;
+    }
+}
+@media only screen and (min-width:1300px){
+    main .head h1{
+        font-size: 30px;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
+    }
+    main .member2 form{
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin-top: 30px;
+        margin-bottom:20px ;
+        margin-left: 30px;
+    }
+    main .member2 form label{
+        font-size: 20px;
+    }
+    main .member2 form input,main .member2 form select{
+        width:100%;
+        height:100%;
+        font-size:15px;
+        margin-left: 10%;
+    }
+    #i7,#i8{
+        width: 50%;
+        text-align: center;
+        margin-left: 100px;
+    }
+}

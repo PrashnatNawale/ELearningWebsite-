@@ -1,0 +1,35 @@
+.main {
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+    grid-column-gap: 20px;
+}
+
+.main1 {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main1 a img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width:400px) {
+    .main h2 {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width:500px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
